@@ -18,25 +18,34 @@
   </header>
 
   <main>
-    <form>
-      <label for="ad">Etkinlik adı</label>
-      <input type="text" id="ad" value="Kariyer Günleri 2026">
+   <form class="etkinlik-form">
+  <div class="form-grup">
+    <label for="ad">Etkinlik adı</label>
+    <input type="text" id="ad" name="ad" value="Kariyer Günleri 2026">
+  </div>
 
-      <label for="kat">Kategori</label>
-      <select id="kat">
-        <option value="">Seçiniz</option>
-        <option value="seminer" selected>Seminer</option>
-        <option value="atolye">Atölye</option>
-      </select>
+  <div class="form-grup">
+    <label for="kategori">Kategori</label>
+    <select id="kategori" name="kategori">
+      <option value="seminer" selected>Seminer</option>
+      <option value="atolye">Atölye</option>
+      <option value="soylesi">Söyleşi</option>
+    </select>
+  </div>
 
-      <label for="tarih">Tarih</label>
-      <input type="text" id="tarih" value="12.10.2026">
+  <div class="form-grup">
+    <label for="tarih">Tarih</label>
+    <input type="date" id="tarih" name="tarih" value="2026-10-12">
+  </div>
 
-      <label for="aciklama">Açıklama</label>
-      <textarea id="aciklama" rows="3">Mezun söyleşileri</textarea>
+  <div class="form-grup">
+    <label for="aciklama">Açıklama</label>
+    <textarea id="aciklama" name="aciklama">Mezun söyleşileri</textarea>
+  </div>
 
-      <button type="submit" class="btn">Güncelle</button>
-    </form>
+  <button type="submit" class="btn">Kaydet</button>
+</form>
+    
   </main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Ad Soyad — 2416501003 */
+/* Beyza Karabiyik — 2416501003 */
 :root {
   --no: 2416501003;
   --ton: 140; /* Slayttaki yeşil ton */
@@ -159,4 +159,152 @@ section.etkinlikler-grid {
     flex-direction: row !important;
     align-items: flex-start;
   }
+}
+/* --- Form Tasarımı --- */
+.etkinlik-form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-grup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-grup label {
+  font-weight: bold;
+  color: #111;
+  font-size: 1rem;
+}
+
+.form-grup input,
+.form-grup select,
+.form-grup textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: var(--kose);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.form-grup input:focus,
+.form-grup select:focus,
+.form-grup textarea:focus {
+  outline: none;
+  border-color: var(--renk-ana);
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+/* Yeşil Buton */
+.btn {
+  display: inline-block;
+  background-color: var(--renk-ana);
+  color: #ffffff !important;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--kose);
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+/* Formu dikey sıralama */
+.etkinlik-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px; /* Formun çok fazla uzamasını engeller */
+}
+
+/* Her etiket ve girdiyi alt alta yapma */
+.form-grup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-grup label {
+  font-weight: bold;
+}
+
+.form-grup input,
+.form-grup select,
+.form-grup textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Form alanlarının genişliğini tam oturtma */
+.etkinlik-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px; /* Formun çok genişleyip dağılmasını önler */
+  width: 100%;
+  align-items: stretch; /* İçindeki elemanların tam genişlik almasını sağlar */
+  text-align: left; /* Metinleri sola hizalar */
+}
+
+.form-grup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.form-grup label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111;
+}
+
+/* Tüm input, select ve textarea kutularını %100 genişlik yap */
+.form-grup input,
+.form-grup select,
+.form-grup textarea {
+  width: 100% !important;
+  box-sizing: border-box; /* Padding dahil genişlik hesabı */
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: #ffffff;
+}
+
+/* Kaydet Butonunu Sol Alt Köşeye Şık Bir Şekilde Koyma */
+.etkinlik-form .btn {
+  width: fit-content;
+  align-self: flex-start;
+  background-color: var(--renk-ana, #2e7d32);
+  color: #ffffff !important;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Listeye Dön Linki */
+main a[href="etkinlikler.html"] {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--renk-ana, #2e7d32);
+  font-weight: bold;
+  text-decoration: none;
 }
