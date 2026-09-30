@@ -1,0 +1,162 @@
+/* Ad Soyad — 2416501003 */
+:root {
+  --no: 2416501003;
+  --ton: 140; /* Slayttaki yeşil ton */
+  --renk-ana: hsl(var(--ton), 65%, 38%);
+  --renk-zemin: hsl(var(--ton), 30%, 97%);
+  --font: "Trebuchet MS", sans-serif;
+  --bosluk-m: 1rem;
+  --kose: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--renk-zemin);
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* Üst Yeşil Bant ve Menü */
+header {
+  background-color: var(--renk-ana);
+  color: #ffffff;
+  padding: 1.2rem var(--bosluk-m);
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--bosluk-m) 2rem var(--bosluk-m);
+}
+
+h2 {
+  color: #111;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--renk-ana);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Kart Standartları */
+article.kart {
+  background: #ffffff;
+  border: 1px solid #d0e0d8;
+  border-radius: var(--kose);
+  padding: var(--bosluk-m);
+}
+
+article.kart h3 {
+  margin: 0 0 0.4rem 0;
+  color: #111;
+}
+
+/* Ana Sayfadaki 2'li Düzen (Mobil First) */
+.anasayfa-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--bosluk-m);
+}
+
+/* Bilgisayar/Geniş Ekranda Yan Yana Geçiş */
+@media screen and (min-width: 600px) {
+  .anasayfa-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+/* Mobil (Varsayılan): Alt alta tek sütun */
+section.etkinlikler-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Masaüstü (Geniş Ekran): Yan yana 3 sütun */
+@media screen and (min-width: 600px) {
+  section.etkinlikler-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+/* --- Detay Sayfası Tasarımı --- */
+
+/* Afiş Görsel Boyutu */
+.afis-kutusu {
+  margin: 0;
+  max-width: 300px;
+}
+
+.afis-kutusu img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--kose);
+  display: block;
+}
+
+.afis-kutusu figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+/* Künye (dl) Hizalaması */
+.kunye {
+  margin: 0;
+}
+
+.kunye dt {
+  font-weight: bold;
+  color: #111;
+  margin-top: 0.5rem;
+}
+
+.kunye dd {
+  margin-left: 0;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+/* Varsayılan Mobil Görünüm: Alt alta */
+.detay-konteyner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Masaüstü (Geniş Ekran): Yan Yana (Afiş Solda, Künye Sağda) */
+@media screen and (min-width: 600px) {
+  .detay-konteyner {
+    flex-direction: row !important;
+    align-items: flex-start;
+  }
+}

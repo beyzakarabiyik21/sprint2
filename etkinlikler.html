@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<html lang="tr">
 <head>
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kampüs Etkinlikleri</title>
+    <link rel="stylesheet" href="css/2416501003.css">
 </head>
 <body>
     <header>
@@ -9,55 +12,38 @@
         <nav>
             <a href="index.html">Ana Sayfa</a>
             <a href="etkinlikler.html">Etkinlikler</a>
-            <a href="etkinlik-detay.html">Detay</a>
             <a href="etkinlik-ekle.html">Ekle</a>
+            <a href="etkinlik-guncelle.html">Güncelle</a>
         </nav>
     </header>
 
-    <main>
-        <table border="1">
-            <tr>
-                <td>
-                    <article>
-                        <h2>Kariyer Günleri</h2>
-                        <p>Seminer &bull; <time>12 Ekim</time> &bull; A blok</p>
-                        <p><a href="etkinlik-detay.html">Detayları gör</a></p>
-                    </article>
-                </td>
-                
-            </tr>
-        
-            <caption>Etkinlikler</caption>
-            <tr>
-                <td>
-                    <article>
-                        <h2>Robotik Atölyesi</h2>
-                        <p>Atölye &bull; <time>20 Ekim</time> &bull; Lab2</p>
-                        <p><a href="etkinlik-detay.html">Detayları gör</a></p>
-                    </article>
-                </td>
-            </tr>
-        </table>
-        <br>
-            
-            <table border="1">
-                <caption>Ayın Programı</caption>
-                <tr>
-                    <th>Tarih</th>
-                    <th>Etkinlik</th>
-                    <th>Yer</th>
-                </tr>
-                <tr>
-                    <td><time>12 Ekim</time></td>
-                    <td>Kariyer Günleri</td>
-                    <td>A blok</td>
-                </tr>
-            </table>
-        </main>
-        <footer>
-            <p>Ad Soyad &middot; 20xxxxxxx &middot; 2026</p>
-        </footer>
+   
+     
+<main>
+  <h2>Tüm Etkinlikler</h2>
 
-            
+  <!-- class="etkinlikler-grid" olduğundan emin ol -->
+  <section class="etkinlikler-grid">
+    <article class="kart">
+      <h3>Kariyer Günleri</h3>
+      <p>Seminer · 12 Ekim · A Blok</p>
+      <a href="etkinlik-detay.html">Detay →</a>
+    </article>
+
+    <article class="kart">
+      <h3>Robotik Atölyesi</h3>
+      <p>Atölye · 20 Ekim · Lab 2</p>
+      <a href="etkinlik-detay.html">Detay →</a>
+    </article>
+
+    <article class="kart">
+      <h3>Siber Güvenlik</h3>
+      <p>Söyleşi · 27 Ekim · B Blok</p>
+      <a href="etkinlik-detay.html">Detay →</a>
+    </article>
+  </section>
+</main>
+
+       
 </body>
 </html>
